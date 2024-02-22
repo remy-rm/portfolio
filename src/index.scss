@@ -1,0 +1,38 @@
+@use '../src/styles/abstract/variables' as *;
+
+body {
+  background: $backgroundColor;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin: 0;
+}
+li{
+  color: $primaryColor;
+  list-style-type: none;
+}
+a{
+  color: $primaryColor;
+  text-decoration: none;
+}
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+
+  & Nav{
+    width: 90%;
+
+
+  }
+
+}
+@media screen and (min-width: 720px) {
+  .navBar {
+    position: sticky;
+  top: 0;
+  }
+}
