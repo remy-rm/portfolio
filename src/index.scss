@@ -1,11 +1,10 @@
 @use '../src/styles/abstract/variables' as *;
+@use '../src/styles/global/typography' as *;
 
 body {
-  background: $backgroundColor;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: $backgroundColor no-repeat fixed;
   position: relative;
-  margin: 0;
+  margin: $margin;
 }
 li{
   color: $primaryColor;
@@ -15,6 +14,7 @@ a{
   color: $primaryColor;
   text-decoration: none;
 }
+
 .navBar{
   display: flex;
   justify-content: space-around;
@@ -22,6 +22,7 @@ a{
   bottom: 0;
   margin: auto;
   width: 100%;
+  z-index: 1;
 
   & Nav{
     width: 90%;

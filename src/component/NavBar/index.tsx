@@ -1,4 +1,10 @@
-import { Home, Contact, CandlestickChart, BookMarked } from 'lucide-react'
+import {
+  Home,
+  Contact,
+  CandlestickChart,
+  BookMarked,
+  UserRoundSearch,
+} from 'lucide-react'
 import './style.scss'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
@@ -36,6 +42,11 @@ function Nav() {
       to: '/portfolio/',
       label: 'Portfolio',
       icon: <BookMarked size={32} strokeWidth={0.75} />,
+    },
+    {
+      to: '/Apropos/',
+      label: 'A propos',
+      icon: <UserRoundSearch size={32} strokeWidth={0.75} />,
     },
     {
       to: '/contact/',

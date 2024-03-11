@@ -1,0 +1,18 @@
+@use 'src/styles/abstract/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+p {
+    font-family: 'Fredoka', cursive;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    line-height: 1.2;
+    color:$primaryColor;
+    font-weight: 400;
+}

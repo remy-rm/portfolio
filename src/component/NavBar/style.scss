@@ -1,12 +1,11 @@
 @use '../../styles/abstract/variables' as *;
+@use '../../styles/abstract/mixins' as *;
 
 .nav {
       display: flex;
-      background-color: white;
-        justify-content: space-evenly;
-      padding: $padding;
-      border-radius: 25px;
-      box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.4));
+      justify-content: space-evenly;
+  @include cardModel;
+
 
   &__btn{
     position: relative;
@@ -59,7 +58,9 @@
 
 @media screen and (min-width: 720px) {
   .nav{
-
+  gap: 20px;
+    padding: $paddingDesktop;
+    flex-wrap: wrap;
   &__btn{
     border: $secondaryColor 2px solid;
     border-radius: 18px;
