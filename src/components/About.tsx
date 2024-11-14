@@ -1,12 +1,10 @@
 
 import {gradientTitle} from "../style.ts";
-
-// Définition de la fonction pour gérer le téléchargement du CV
 const handleDownload = () => {
+
     const link = document.createElement('a');
-    link.href = '/assets/cv/remymarquis.pdf';  // Chemin du fichier PDF
-    link.download = 'remymarquisCv.pdf';         // Nom du fichier lors du téléchargement
-    document.body.appendChild(link);
+    link.href = 'public/assets/cv/remymarquis.pdf';
+    link.download = 'remymarquisCv.pdf';
     link.click();
     document.body.removeChild(link);
 };
