@@ -1,0 +1,1 @@
+export const gradientTitle = "bg-gradient-to-r from-purple-600 to-fuchsia-600 bg-clip-text text-transparent";
