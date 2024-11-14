@@ -3,7 +3,7 @@ import {gradientTitle} from "../style.ts";
 const handleDownload = () => {
 
     const link = document.createElement('a');
-    link.href = 'public/assets/cv/remymarquis.pdf';
+    link.href = '/assets/cv/remymarquis.pdf';
     link.download = 'remymarquisCv.pdf';
     link.click();
     document.body.removeChild(link);
